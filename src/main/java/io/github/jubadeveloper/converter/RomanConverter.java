@@ -37,7 +37,7 @@ public class RomanConverter implements RomanConverterContract {
 
     @Override
     public void validateIn(String in) throws InputException {
-        if (in.equals("")) throw new InputException("Input cant be empty");
+        if (in == null || in.equals("")) throw new InputException("Input cant be empty");
         if (!in
                 .toLowerCase(Locale.ROOT)
                 .matches("^[ivxlcdm]+$")) throw new InputException("Invalid input format");
