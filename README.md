@@ -10,5 +10,19 @@ corresponding number (Output)
   each functionality
 
 
+### Building
+
+```bash
+  mvn package
+```
+
 ### How to use?
 
+Call the package and pass the roman number 
+as argument in the right side.
+
+- Example:
+
+```bash
+  java -jar roman-converter-1.0-SNAPSHOT.jar XLLXD
+```
